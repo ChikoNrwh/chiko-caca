@@ -357,6 +357,91 @@ img{
 .gallery{
   -webkit-overflow-scrolling: touch;
 }
+
+/* ================= MOBILE FIX ================= */
+@media(max-width:768px){
+
+  /* HERO FIX */
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-media{
+    height:60vh;
+  }
+
+  .hero-copy{
+    padding:30px 20px;
+    text-align:center;
+  }
+
+  .title{
+    font-size:34px;
+  }
+
+  /* WRAP */
+  .wrap{
+    padding:60px 16px;
+  }
+
+  /* SECTION */
+  .section{
+    margin-bottom:70px;
+  }
+
+  /* CARD */
+  .card{
+    padding:20px;
+  }
+
+  /* MEMPELAI */
+  .section .card h3{
+    font-size:22px;
+  }
+
+  /* GALLERY */
+  .gallery{
+    gap:12px;
+    padding:10px;
+  }
+
+  .item{
+    min-width:85%;
+  }
+
+  /* MAP */
+  .map iframe{
+    height:220px;
+  }
+
+  /* DOA TEXT */
+  .section p{
+    font-size:14px;
+  }
+
+  /* ARAB TEXT */
+  .section .card p[style*="direction:rtl"]{
+    font-size:18px !important;
+  }
+
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.btn{
+  font-size:11px;
+  padding:10px 20px;
+}
+
+@media(max-width:768px){
+  .bg-gradient,
+  .blob{
+    display:none;
+  }
+}
 </style>
 </head>
 
